@@ -2,6 +2,19 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
+```
+"scripts": {
+    "serve": "serve build -s -l 3000",
+    "start": "react-scripts start .env.local",
+    "build": "CI=false GENERATE_SOURCEMAP=false react-scripts build .env.production",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build:css": "postcss src/assets/css/tailwind.css -o src/assets/css/main.css",
+    "watch:css": "postcss src/assets/css/tailwind.css -o src/assets/css/main.css",
+    "prettier": "prettier --config ./.prettierrc --write \"**/*.js\""
+  },
+```
+
 In the project directory, you can run:
 
 ### `npm start` or `yarn start`
