@@ -10,7 +10,7 @@ const header = (props) => {
                 onClick={props.showSidebar}
                 className="px-4 border-r border-gray-200 text-gray-500 focus:outline-none focus:bg-gray-100 focus:text-gray-600 md:hidden"
             >
-                <img className="h-8 w-auto" src={icon} alt="see.city" />
+                <img className="h-8 w-auto" src={icon} alt="isn" />
             </button>
 
             <div className="flex-1 px-4 flex justify-between">

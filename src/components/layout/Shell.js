@@ -56,7 +56,7 @@ const Shell = () => {
                     </div>
 
                     <div className="flex-shrink-0 flex items-center h-16 px-4 bg-gray-900">
-                        <img className="h-8 w-auto" src={logo} alt="See.City" />
+                        <img className="h-8 w-auto" src={logo} alt="isn" />
                     </div>
 
                     {/* Mobile Sidebar */}
