@@ -76,6 +76,7 @@ const Shell = () => {
                     className="flex-1 relative z-0 overflow-y-auto py-6 focus:outline-none"
                     tabIndex="0"
                 >
+                    <span>TODO: Add Router</span>
                     {/* <Router /> */}
                 </main>
 
