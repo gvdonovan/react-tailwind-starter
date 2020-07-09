@@ -1,0 +1,49 @@
+{
+  "name": "react-tw-poc",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "serve build -s -l 3000",
+    "start": "react-scripts start .env.local",
+    "build": "CI=false GENERATE_SOURCEMAP=false react-scripts build .env.production",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build:css": "postcss src/assets/css/tailwind.css -o src/assets/css/main.css",
+    "watch:css": "postcss src/assets/css/tailwind.css -o src/assets/css/main.css",
+    "prettier": "prettier --config ./.prettierrc --write \"**/*.js\""
+  },
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1"
+  },
+  "devDependencies": {
+      "@tailwindcss/ui": "^0.3.0",
+      "autoprefixer": "^9.7.6",
+      "eslint": "^6.8.0",
+      "eslint-plugin-react": "^7.19.0",
+      "postcss-cli": "^7.1.1",
+      "prettier": "^2.0.5",
+      "serve": "^11.3.2",
+      "tailwind.macro": "^0.5.10",
+      "tailwindcss-gradients": "^3.0.0"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
