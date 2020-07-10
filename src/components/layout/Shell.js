@@ -3,6 +3,7 @@ import { Footer, Header, Sidebar } from '.';
 import { classNames } from '../../utils';
 import logo from '../../assets/img/isn-logo-footer.png';
 
+// eslint-disable-next-line react/prop-types
 const ColorTile = ({ color }) => {
     return (
         <div className="pb-4 col-span-1 bg-white shadow-sm sm:rounded-md">
