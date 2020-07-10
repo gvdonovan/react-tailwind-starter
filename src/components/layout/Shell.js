@@ -11,7 +11,7 @@ const ColorTile = ({ color }) => {
                 <span
                     className={`px-2 py-4 text-isn-${color.toLowerCase()}-400 font-medium`}
                 >
-                    {color}
+                    {color} ({`isn-${color.toLowerCase()}`})
                 </span>
             </div>
             <div className="pt-2 px-2 flex mb-4">
