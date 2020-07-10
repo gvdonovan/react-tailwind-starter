@@ -16,10 +16,10 @@ const Sidebar = () => {
     return (
         <div className="hidden md:flex md:flex-shrink-0">
             <div className="flex flex-col w-64">
-                <div className="flex items-center h-16 flex-shrink-0 px-4 bg-gradient-b-light shadow">
+                <div className="flex items-center h-16 flex-shrink-0 px-4 bg-isn-gray-100 shadow">
                     <img className="h-8 w-auto" src={logo} alt="isn" />
                 </div>
-                <div className="h-0 flex-1 flex flex-col overflow-y-auto bg-gray-300">
+                <div className="h-0 flex-1 flex flex-col overflow-y-auto bg-isn-gray-200">
                     {/* <nav className="flex-1 px-2 py-4">
                         {navLinks.map((route, index) => {
                             return (

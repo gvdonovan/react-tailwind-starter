@@ -4,7 +4,7 @@ import ClickAwayListener from 'react-click-away-listener';
 
 const Avatar = ({ text }) => {
     return (
-        <span className="inline-flex items-center justify-center h-10 w-10 rounded-full bg-orange-500">
+        <span className="inline-flex items-center justify-center h-10 w-10 rounded-full bg-isn-violet-300">
             <span className="text-md font-medium leading-none text-white">
                 {text}
             </span>
