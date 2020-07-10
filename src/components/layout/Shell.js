@@ -3,6 +3,95 @@ import { Footer, Header, Sidebar } from '.';
 import { classNames } from '../../utils';
 import logo from '../../assets/img/isn-logo-footer.png';
 
+const ColorTile = ({ color }) => {
+    return (
+        <div className="pb-4 col-span-1 bg-white shadow-sm sm:rounded-md">
+            <div className="py-2 border-b border-gray-200">
+                <span
+                    className={`px-2 py-4 text-isn-${color.toLowerCase()}-400 font-medium`}
+                >
+                    {color}
+                </span>
+            </div>
+            <div className="pt-2 px-2 flex mb-4">
+                <div
+                    className={`w-1/4 bg-isn-${color.toLowerCase()}-100 flex items-center h-12`}
+                >
+                    <div className="flex-1 text-center text-white text-xs">
+                        100
+                    </div>
+                </div>
+                <div
+                    className={`w-1/4 bg-isn-${color.toLowerCase()}-200 flex items-center h-12`}
+                >
+                    <div className="flex-1 text-center text-white text-xs">
+                        200
+                    </div>
+                </div>
+                <div
+                    className={`w-1/4 bg-isn-${color.toLowerCase()}-300 flex items-center h-12`}
+                >
+                    <div className="flex-1 text-center text-white text-xs">
+                        300
+                    </div>
+                </div>
+                <div
+                    className={`w-1/4 bg-isn-${color.toLowerCase()}-400 flex items-center h-12`}
+                >
+                    <div className="flex-1 text-center text-white text-xs">
+                        400
+                    </div>
+                </div>
+            </div>
+            <div className="px-2 grid grid-cols-2 col-gap-2 row-gap-2">
+                <div
+                    className={`bg-gradient-r-isn-${color.toLowerCase()} flex items-center h-12`}
+                >
+                    <div className="flex-1 text-center text-white text-xs">
+                        bg-gradient-r
+                    </div>
+                </div>
+                <div
+                    className={`bg-gradient-l-isn-${color.toLowerCase()} flex items-center h-12`}
+                >
+                    <div className="flex-1 text-center text-white text-xs">
+                        bg-gradient-l
+                    </div>
+                </div>
+
+                <div
+                    className={`bg-gradient-b-isn-${color.toLowerCase()} flex items-center h-12`}
+                >
+                    <div className="flex-1 text-center text-white text-xs">
+                        bg-gradient-b
+                    </div>
+                </div>
+                <div
+                    className={`bg-gradient-t-isn-${color.toLowerCase()} flex items-center h-12`}
+                >
+                    <div className="flex-1 text-center text-white text-xs">
+                        bg-gradient-t
+                    </div>
+                </div>
+                <div
+                    className={`bg-gradient-r-isn-${color.toLowerCase()}-light flex items-center h-12`}
+                >
+                    <div className="flex-1 text-center text-white text-xs">
+                        light
+                    </div>
+                </div>
+                <div
+                    className={`bg-gradient-r-isn-${color.toLowerCase()}-dark flex items-center h-12`}
+                >
+                    <div className="flex-1 text-center text-white text-xs">
+                        dark
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
 const Shell = () => {
     const [showMobileSidebar, setShowMobileSidebar] = useState(false);
 
@@ -78,121 +167,12 @@ const Shell = () => {
                 >
                     <div className="px-2">
                         <div className="grid grid-cols-1 sm:grid-cols2 lg:grid-cols-3 col-gap-2 row-gap-6">
-                            <div className="pb-4 col-span-1 bg-white shadow-sm sm:rounded-md">
-                                <div className="py-2 border-b border-gray-200">
-                                    <span className="px-2 py-4 text-isn-orange-400">
-                                        Orange
-                                    </span>
-                                </div>
-                                <div className="pt-2 px-2 flex mb-4">
-                                    <div className="w-1/4 bg-isn-orange-400 h-12"></div>
-                                    <div className="w-1/4 bg-isn-orange-300 h-12"></div>
-                                    <div className="w-1/4 bg-isn-orange-200 h-12"></div>
-                                    <div className="w-1/4 bg-isn-orange-100 h-12"></div>
-                                </div>
-                                <div className="px-2 grid grid-cols-2 col-gap-2 row-gap-2">
-                                    <div className="bg-gradient-l-isn-orange h-24"></div>
-                                    <div className="bg-gradient-r-isn-orange h-24"></div>
-                                    <div className="bg-gradient-t-isn-orange h-24"></div>
-                                    <div className="bg-gradient-b-isn-orange h-24"></div>
-                                </div>
-                            </div>
-
-                            <div className="pb-4 col-span-1 bg-white shadow-sm sm:rounded-md">
-                                <div className="py-2 border-b border-gray-200">
-                                    <span className="px-2 py-4 text-isn-gray-400">
-                                        Gray
-                                    </span>
-                                </div>
-                                <div className="pt-2 px-2 flex mb-4">
-                                    <div className="w-1/4 bg-isn-gray-400 h-12"></div>
-                                    <div className="w-1/4 bg-isn-gray-300 h-12"></div>
-                                    <div className="w-1/4 bg-isn-gray-200 h-12"></div>
-                                    <div className="w-1/4 bg-isn-gray-100 h-12"></div>
-                                </div>
-                                <div className="px-2 grid grid-cols-2 col-gap-2 row-gap-2">
-                                    <div className="bg-gradient-l-isn-gray h-24"></div>
-                                    <div className="bg-gradient-r-isn-gray h-24"></div>
-                                    <div className="bg-gradient-t-isn-gray h-24"></div>
-                                    <div className="bg-gradient-b-isn-gray h-24"></div>
-                                </div>
-                            </div>
-                            <div className="pb-4 col-span-1 bg-white shadow-sm sm:rounded-md">
-                                <div className="py-2 border-b border-gray-200">
-                                    <span className="px-2 py-4 text-isn-violet-400">
-                                        Violet
-                                    </span>
-                                </div>
-                                <div className="pt-2 px-2 flex mb-4">
-                                    <div className="w-1/4 bg-isn-violet-400 h-12"></div>
-                                    <div className="w-1/4 bg-isn-violet-300 h-12"></div>
-                                    <div className="w-1/4 bg-isn-violet-200 h-12"></div>
-                                    <div className="w-1/4 bg-isn-violet-100 h-12"></div>
-                                </div>
-                                <div className="px-2 grid grid-cols-2 col-gap-2 row-gap-2">
-                                    <div className="bg-gradient-l-isn-violet h-24"></div>
-                                    <div className="bg-gradient-r-isn-violet h-24"></div>
-                                    <div className="bg-gradient-t-isn-violet h-24"></div>
-                                    <div className="bg-gradient-b-isn-violet h-24"></div>
-                                </div>
-                            </div>
-                            <div className="pb-4 col-span-1 bg-white shadow-sm sm:rounded-md">
-                                <div className="py-2 border-b border-gray-200">
-                                    <span className="px-2 py-4 text-isn-aqua-400">
-                                        Aqua
-                                    </span>
-                                </div>
-                                <div className="pt-2 px-2 flex mb-4">
-                                    <div className="w-1/4 bg-isn-aqua-400 h-12"></div>
-                                    <div className="w-1/4 bg-isn-aqua-300 h-12"></div>
-                                    <div className="w-1/4 bg-isn-aqua-200 h-12"></div>
-                                    <div className="w-1/4 bg-isn-aqua-100 h-12"></div>
-                                </div>
-                                <div className="px-2 grid grid-cols-2 col-gap-2 row-gap-2">
-                                    <div className="bg-gradient-l-isn-aqua h-24"></div>
-                                    <div className="bg-gradient-r-isn-aqua h-24"></div>
-                                    <div className="bg-gradient-t-isn-aqua h-24"></div>
-                                    <div className="bg-gradient-b-isn-aqua h-24"></div>
-                                </div>
-                            </div>
-                            <div className="pb-4 col-span-1 bg-white shadow-sm sm:rounded-md">
-                                <div className="py-2 border-b border-gray-200">
-                                    <span className="px-2 py-4 text-isn-green-400">
-                                        Green
-                                    </span>
-                                </div>
-                                <div className="pt-2 px-2 flex mb-4">
-                                    <div className="w-1/4 bg-isn-green-400 h-12"></div>
-                                    <div className="w-1/4 bg-isn-green-300 h-12"></div>
-                                    <div className="w-1/4 bg-isn-green-200 h-12"></div>
-                                    <div className="w-1/4 bg-isn-green-100 h-12"></div>
-                                </div>
-                                <div className="px-2 grid grid-cols-2 col-gap-2 row-gap-2">
-                                    <div className="bg-gradient-l-isn-green h-24"></div>
-                                    <div className="bg-gradient-r-isn-green h-24"></div>
-                                    <div className="bg-gradient-t-isn-green h-24"></div>
-                                    <div className="bg-gradient-b-isn-green h-24"></div>
-                                </div>
-                            </div>
-                            <div className="pb-4 col-span-1 bg-white shadow-sm sm:rounded-md">
-                                <div className="py-2 border-b border-gray-200">
-                                    <span className="px-2 py-4 text-isn-yellow-400">
-                                        Yellow
-                                    </span>
-                                </div>
-                                <div className="pt-2 px-2 flex mb-4">
-                                    <div className="w-1/4 bg-isn-yellow-400 h-12"></div>
-                                    <div className="w-1/4 bg-isn-yellow-300 h-12"></div>
-                                    <div className="w-1/4 bg-isn-yellow-200 h-12"></div>
-                                    <div className="w-1/4 bg-isn-yellow-100 h-12"></div>
-                                </div>
-                                <div className="px-2 grid grid-cols-2 col-gap-2 row-gap-2">
-                                    <div className="bg-gradient-l-isn-yellow h-24"></div>
-                                    <div className="bg-gradient-r-isn-yellow h-24"></div>
-                                    <div className="bg-gradient-t-isn-yellow h-24"></div>
-                                    <div className="bg-gradient-b-isn-yellow h-24"></div>
-                                </div>
-                            </div>
+                            <ColorTile color="Orange" />
+                            <ColorTile color="Gray" />
+                            <ColorTile color="Violet" />
+                            <ColorTile color="Aqua" />
+                            <ColorTile color="Green" />
+                            <ColorTile color="Yellow" />
                         </div>
                     </div>
 
