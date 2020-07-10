@@ -2,16 +2,26 @@ import React from 'react';
 import { NavLink, useRouteMatch } from 'react-router-dom';
 import logo from '../../assets/img/isn-logo-footer.png';
 
-//TODO: Add links
-const navLinks = [];
+const links = [
+    {
+        name: 'Home',
+        to: '/',
+        exact: true,
+    },
+    {
+        name: 'Colors',
+        to: '/colors',
+        exact: true,
+    },
+];
 
 const Sidebar = () => {
-    // const { url } = useRouteMatch();
+    const { url } = useRouteMatch();
 
     const className =
-        'mt-1 mx-2 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-gray-300 rounded-md hover:text-white hover:bg-gray-700 focus:outline-none focus:text-white focus:bg-gray-800 transition ease-in-out duration-150';
+        'mt-1 mx-2 group flex items-center px-2 py-2 text-sm leading-5 font-medium text-white rounded-md hover:text-white hover:bg-isn-violet-400 focus:outline-none focus:text-white focus:bg-isn-violet-400 transition ease-in-out duration-150';
     const activeClassName =
-        'text-blue-200 bg-gray-800 rounded-md focus:outline-none focus:text-blue-200';
+        'text-white bg-isn-violet-400 rounded-md focus:outline-none focus:text-white';
 
     return (
         <div className="hidden md:flex md:flex-shrink-0">
@@ -19,14 +29,15 @@ const Sidebar = () => {
                 <div className="flex items-center h-16 flex-shrink-0 px-4 bg-isn-gray-100 shadow">
                     <img className="h-8 w-auto" src={logo} alt="isn" />
                 </div>
-                <div className="h-0 flex-1 flex flex-col overflow-y-auto bg-isn-gray-200">
-                    {/* <nav className="flex-1 px-2 py-4">
-                        {navLinks.map((route, index) => {
+                <div className="h-0 flex-1 flex flex-col overflow-y-auto bg-isn-gray-300">
+                    <nav className="flex-1 px-2 py-4">
+                        {links.map((route, index) => {
                             return (
                                 <NavLink
                                     key={index}
                                     exact={route.exact}
-                                    to={`${url}${route.to}`}
+                                    // to={`${url}${route.to}`}
+                                    to={`${route.to}`}
                                     className={className}
                                     activeClassName={activeClassName}
                                 >
@@ -34,7 +45,7 @@ const Sidebar = () => {
                                 </NavLink>
                             );
                         })}
-                    </nav> */}
+                    </nav>
                 </div>
             </div>
         </div>

@@ -5,11 +5,11 @@ import { HomePage, ColorPalettePage } from '../pages';
 const routes = () => {
     return (
         <Switch>
-            {/* <Route path="/colors">
+            <Route path="/colors">
                 <ColorPalettePage />
-            </Route> */}
+            </Route>
             <Route path="/">
-                <ColorPalettePage />
+                <HomePage />
             </Route>
         </Switch>
     );
