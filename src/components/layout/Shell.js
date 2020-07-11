@@ -74,7 +74,7 @@ const Shell = ({ router: Router }) => {
 
                 {/* Main content */}
                 <main
-                    className="px-2 py-2 flex-1 relative z-0 overflow-y-auto py-6 focus:outline-none bg-gray-100"
+                    className="px-2 py-2 flex-1 relative z-0 overflow-y-auto focus:outline-none bg-gray-100"
                     tabIndex="0"
                 >
                     <Router />
